@@ -429,7 +429,7 @@ impl Plugboard {
     /// Essentially does the reverse of constructing a plugboard.
     /// This was needed because of how our implementations differ when storing
     /// the plugboard in the EnigmaKey. I stored them pre-decoded to make it cheaper
-    /// to create and copy an EnigmaKey, whereas Mike Pence stored his encoded as a String,
+    /// to create and copy an EnigmaKey, whereas Mike Pound stored his encoded as a String,
     /// making it easier for his implementation to get the current plugboard.
     /// This function is only called like 10 times, so the cost isn't too bad.
     pub fn generate_connections(&self) -> Vec<(char, char)> {
